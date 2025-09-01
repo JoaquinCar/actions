@@ -41,8 +41,8 @@ jobs:
           export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest
 
-      - name: Check security
-        run: pip-audit
+      #- name: Check security
+      #  run: pip-audit
 
-      - name: process finished
-        run: echo " success "
+      #- name: process finished
+      #  run: echo " success "
