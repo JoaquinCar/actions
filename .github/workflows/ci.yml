@@ -1,1 +1,16 @@
-#hola mundo
+name: Primer Workflow
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Hola desde GitHub Actions
+        run: echo "¡Hola Joaquin! Tu primer workflow se ejecutó correctamente."
